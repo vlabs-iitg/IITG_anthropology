@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>checked demo</title>
+<style>
+input, label {
+line-height: 1.5em;
+}
+
+.right{
+ background-image:url(tick.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+ .wrong{
+ background-image:url(wrong.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<form>
+<div>
+
+<label>	1)	What is a cortex in stone tool ?</label><div id="log"></div>
+
+<p>
+<div>
+<input type="radio" name="q1" value="1" id="orange">
+<label for="orange">primary flake</label>
+
+<input type="radio" name="q1" value="2" id="apple">
+<label for="apple">Outer surface</label>
+</p>
+<br/>
+<br/>
+
+
+
+
+<label>2)	Who investigated the differences between unheated and heated chert?</label><div id="log1"></div>
+
+<p>
+<div>
+<input type="radio" name="q2" value="1" id="orange">
+<label for="orange">Purdy and Brooks</label>
+</div>
+<div>
+<input type="radio" name="q2" value="2" id="apple">
+<label for="apple">St. Acheul</label>
+</div>
+<div>
+<input type="radio" name="q2" value="3" id="banana">
+<label for="banana">F. C. J.Spurrell</label>
+</div>
+
+<input type="radio" name="q2" value="4" id="banana">
+<label for="banana">Andre Leroi –Gourhan</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+
+
+
+
+
+<label>3)	Why refitting is important in stone tools ?</label><div id="log2"></div>
+
+<p>
+<div>
+<input type="radio" name="q3" value="1" id="orange">
+<label for="orange">because it allows us to follow the stages of the knapper’s craft</label>
+</div>
+<div>
+<input type="radio" name="q3" value="2" id="apple">
+<label for="apple">Refitting provides a dynamic perspective on the spatial distribution of tools</label>
+</div>
+<div>
+<input type="radio" name="q3" value="3" id="banana">
+<label for="banana">both a and b</label>
+</div>
+
+<input type="radio" name="q3" value="4" id="banana">
+<label for="banana">none of them</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+
+<label>4)	What was the method used to remove the flute or channel flake?</label><div id="log3"></div>
+<p>
+<div>
+<input type="radio" name="q4" value="1" id="orange">
+<label for="orange">involves pressing the flake out, downwards</label>
+</div>
+<div>
+<input type="radio" name="q4" value="2" id="apple">
+<label for="apple">involves pressing the flake out, upwards</label>
+</div>
+<div>
+<input type="radio" name="q4" value="3" id="banana">
+<label for="banana">involves pressing and heating the flake out</label>
+</div>
+<input type="radio" name="q4" value="4" id="banana">
+<label for="banana">involves using force</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+<label>	5)	What is refitting?</label><div id="log4"></div>
+
+<p>
+<div>
+<input type="radio" name="q5" value="1" id="orange">
+<label for="orange">put flakes and tool differently</label>
+</div>
+<div>
+<input type="radio" name="q5" value="2" id="apple">
+<label for="apple">Put flakes and tool together</label>
+</div>
+<div>
+<input type="radio" name="q5" value="3" id="banana">
+<label for="banana">same as replication</label>
+</div>
+<input type="radio" name="q5" value="4" id="banana">
+<label for="banana">knapper</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>
+6)	Who has done remarkable work in the Old World regarding stone tool replication?</label><div id="log5"></div>
+<p>
+<div>
+<input type="radio" name="q6" value="1" id="orange">
+<label for="orange">Francois Bordes</label>
+</div>
+<div>
+<input type="radio" name="q6" value="2" id="apple">
+<label for="apple">Donald Crabtree</label>
+</div>
+<div>
+<input type="radio" name="q6" value="3" id="banana">
+<label for="banana">Galton</label>
+</div>
+<input type="radio" name="q6" value="4" id="banana">
+<label for="banana">Henry</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+<label>7)	When did Mesolithic period reach on its peak?</label><div id="log6"></div>
+<p>
+<div>
+<input type="radio" name="q7" value="1" id="orange">
+<label for="orange">around 10,000 years ago</label>
+</div>
+<div>
+<input type="radio" name="q7" value="2" id="apple">
+<label for="apple">around 15,000 years ago</label>
+</div>
+<div>
+<input type="radio" name="q7" value="3" id="banana">
+<label for="banana">around 8,000 years ago</label>
+</div>
+<input type="radio" name="q7" value="4" id="banana">
+<label for="banana">around 20,000 years ago</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>	8)	In which period blade technology became dominant ?</label><div id="log7"></div>
+<p>
+<div>
+<input type="radio" name="q8" value="1" id="orange">
+<label for="orange">Lower Paleolithic period</label>
+</div>
+<div>
+<input type="radio" name="q8" value="2" id="apple">
+<label for="apple">Neolithic period</label>
+</div>
+<div>
+<input type="radio" name="q8" value="3" id="banana">
+<label for="banana">upper Paleolithic period</label>
+</div>
+<input type="radio" name="q8" value="4" id="banana">
+<label for="banana">none of them</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+<label>	9)	`Levalloise technique` named after a site in a____suburb .</label><div id="log8"></div>
+<p>
+<div>
+<input type="radio" name="q9" value="1" id="orange">
+<label for="orange">Paris</label>
+</div>
+<div>
+<input type="radio" name="q9" value="2" id="apple">
+<label for="apple">Tanzania</label>
+</div>
+<div>
+<input type="radio" name="q9" value="3" id="banana">
+<label for="banana">Kenya</label>
+</div>
+<input type="radio" name="q9" value="4" id="banana">
+<label for="banana">India</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>	
+10)	The best known examples like so- called Oldowan tools are from which place ?</label><div id="log9"></div>
+<p>
+<div>
+<input type="radio" name="q10" value="1" id="orange">
+<label for="orange">Tanzania</label>
+</div>
+<div>
+<input type="radio" name="q10" value="2" id="apple">
+<label for="apple">India</label>
+</div>
+<div>
+<input type="radio" name="q10" value="3" id="banana">
+<label for="banana">Eqypt</label>
+</div>
+<input type="radio" name="q10" value="4" id="banana">
+<label for="banana">Greece</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>	
+11) Acheulian tools were produced by __flaking</label><div id="log10"></div>
+<p>
+<div>
+<input type="radio" name="q11" value="1" id="orange">
+<label for="orange">percussion</label>
+</div>
+<div>
+<input type="radio" name="q11" value="2" id="apple">
+<label for="apple">heating</label>
+</div>
+<div>
+<input type="radio" name="q11" value="3" id="banana">
+<label for="banana">grinding</label>
+</div>
+<input type="radio" name="q11" value="4" id="banana">
+<label for="banana">picking</label>
+</div>
+</p>
+<br/>
+<br/>
+<input type="button" id="submit" name="submit" value="submit">
+
+</form>
+<script>
+
+
+
+
+$( "#submit" ).on( "click", function() {
+
+var ans1=$( "input[name=q1]:checked" ).val();
+
+var ans2=$( "input[name=q2]:checked" ).val();
+
+var ans3=$( "input[name=q3]:checked" ).val();
+
+var ans4=$( "input[name=q4]:checked" ).val();
+
+var ans5=$( "input[name=q5]:checked" ).val();
+
+var ans6=$( "input[name=q6]:checked" ).val();
+
+var ans7=$( "input[name=q7]:checked" ).val();
+
+var ans8=$( "input[name=q8]:checked" ).val();
+
+var ans9=$( "input[name=q9]:checked" ).val();
+
+var ans10=$( "input[name=q10]:checked" ).val();
+
+var ans11=$( "input[name=q11]:checked" ).val();
+
+var answers = ["2","1","3","1","2","1","1","3","1","1","1"];
+
+
+
+if(ans1==answers[0]) {
+
+	$( "#log" ).html( ans1 + " is collect!" );
+	/*$('#log').addClass('right');*/
+	$( "#log" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans1!=answers[0])
+{
+   $( "#log" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans2==answers[1])
+{
+ $( "#log1" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log1" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans2!=answers[1])
+{
+  $( "#log1" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans3==answers[2])
+{
+ $( "#log2" ).html( ans3 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log2" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans3!=answers[2])
+{
+  $( "#log2" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans4==answers[3])
+{
+ $( "#log3" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log3" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans4!=answers[3])
+{
+  $( "#log3" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans5==answers[4])
+{
+ $( "#log4" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log4" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans5!=answers[4])
+{
+  $( "#log4" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans6==answers[5])
+{
+ $( "#log5" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log5" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans6!=answers[5])
+{
+  $( "#log5" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans7==answers[6])
+{
+ $( "#log6" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log6" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans7!=answers[6])
+{
+  $( "#log6" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans8==answers[7])
+{
+ $( "#log7" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log7" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans8!=answers[7])
+{
+  $( "#log7" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans9==answers[8])
+{
+ $( "#log8" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log8" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans9!=answers[8])
+{
+  $( "#log8" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans10==answers[9])
+{
+ $( "#log9" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log9" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans10!=answers[9])
+{
+  $( "#log9" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans11==answers[10])
+{
+ $( "#log10" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log10" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans11!=answers[10])
+{
+  $( "#log10" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+});
+</script>
+</body>
+</html>

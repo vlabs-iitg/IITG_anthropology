@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>checked demo</title>
+<style>
+input, label {
+line-height: 1.5em;
+}
+
+.right{
+ background-image:url(tick.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+ .wrong{
+ background-image:url(wrong.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+ 
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<form>
+<div>
+
+<label>1. Who discovered that all human being fall into four principal blood groups according to their compositions?</label><div id="log"></div>
+
+<p>
+<div>
+<input type="radio" name="q1" value="1" id="orange">
+<label for="orange">Mendal</label>
+</div>
+<div>
+<input type="radio" name="q1" value="2" id="apple">
+<label for="apple">Landsteiner</label>
+</div>
+<div>
+<input type="radio" name="q1" value="3" id="banana">
+<label for="banana">William Harvey</label>
+</div>
+
+<input type="radio" name="q1" value="4" id="banana">
+<label for="banana">Spancer</label>
+</div>
+</p>
+<hr>
+
+
+
+
+<label>2. BB , BO genotype belongs to which phenotypes?</label><div id="log1"></div>
+
+<p>
+<div>
+<input type="radio" name="q2" value="1" id="orange">
+<label for="orange">O</label>
+</div>
+<div>
+<input type="radio" name="q2" value="2" id="apple">
+<label for="apple">A</label>
+</div>
+<div>
+<input type="radio" name="q2" value="3" id="banana">
+<label for="banana">B</label>
+</div>
+
+<input type="radio" name="q2" value="4" id="banana">
+<label for="banana">AB</label>
+</div>
+
+</p>
+
+<hr>
+
+
+<label>3. Genotype combinations are __ in numbers.</label><div id="log2"></div>
+
+<p>
+<div>
+<input type="radio" name="q3" value="1" id="orange">
+<label for="orange">4</label>
+</div>
+<div>
+<input type="radio" name="q3" value="2" id="apple">
+<label for="apple">3</label>
+</div>
+<div>
+<input type="radio" name="q3" value="3" id="banana">
+<label for="banana">5</label>
+</div>
+
+<input type="radio" name="q3" value="4" id="banana">
+<label for="banana">6</label>
+</div>
+
+</p>
+
+<hr>
+
+
+<label>4. The heredity of blood group is fully known?</label><div id="log3"></div>
+
+<p>
+<div>
+<input type="radio" name="q4" value="1" id="orange">
+<label for="orange">True</label>
+</div>
+<div>
+<input type="radio" name="q4" value="2" id="apple">
+<label for="apple">False</label>
+</div>
+
+
+</p>
+
+<hr>
+
+
+<label>5. 	AA and AO genotype belongs to which phenotypes?</label><div id="log4"></div>
+
+<p>
+<div>
+<input type="radio" name="q5" value="1" id="orange">
+<label for="orange">O</label>
+</div>
+<div>
+<input type="radio" name="q5" value="2" id="apple">
+<label for="apple">A</label>
+</div>
+<div>
+<input type="radio" name="q5" value="3" id="banana">
+<label for="banana">B</label>
+</div>
+
+<input type="radio" name="q5" value="4" id="banana">
+<label for="banana">AB</label>
+</div>
+
+</p>
+
+
+<hr>
+
+
+<label>6. What is Erythrocytes?</label><div id="log5"></div>
+
+<p>
+<div>
+<input type="radio" name="q6" value="1" id="orange">
+<label for="orange">WBC</label>
+</div>
+<div>
+<input type="radio" name="q6" value="2" id="apple">
+<label for="apple">blood platelets</label>
+</div>
+<div>
+<input type="radio" name="q6" value="3" id="banana">
+<label for="banana">RBC</label>
+</div>
+
+<input type="radio" name="q6" value="4" id="banana">
+<label for="banana">none</label>
+</div>
+
+</p>
+
+
+<hr>
+
+
+<label>7. The plasma is a coagulable fluid, containing a variety of substances like fibrinogen</label><div id="log6"></div>
+
+<p>
+<div>
+<input type="radio" name="q7" value="1" id="orange">
+<label for="orange">True</label>
+</div>
+<div>
+<input type="radio" name="q7" value="2" id="apple">
+<label for="apple">False</label>
+</div>
+
+
+</p>
+
+<hr>
+
+
+
+<label>8. What is leukocytes?</label><div id="log7"></div>
+
+<p>
+<div>
+<input type="radio" name="q8" value="1" id="orange">
+<label for="orange">WBC</label>
+</div>
+<div>
+<input type="radio" name="q8" value="2" id="apple">
+<label for="apple">blood platelets</label>
+</div>
+<div>
+<input type="radio" name="q8" value="3" id="banana">
+<label for="banana">RBC</label>
+</div>
+
+<input type="radio" name="q8" value="4" id="banana">
+<label for="banana">none</label>
+</div>
+
+</p>
+
+
+
+<hr>
+
+
+
+
+
+<label>9. Blood also help in removing the waste products of metabolic activities.</label><div id="log8"></div>
+
+<p>
+<div>
+<input type="radio" name="q9" value="1" id="orange">
+<label for="orange">True</label>
+</div>
+<div>
+<input type="radio" name="q9" value="2" id="apple">
+<label for="apple">False</label>
+</div>
+
+
+</p>
+
+<hr>
+
+
+<label>10. The allelic genes which can occupy the same locus on a certain chromosome are not responsible for hereditary mechanism.</label><div id="log9"></div>
+
+<p>
+<div>
+<input type="radio" name="q10" value="1" id="orange">
+<label for="orange">True</label>
+</div>
+<div>
+<input type="radio" name="q10" value="2" id="apple">
+<label for="apple">False</label>
+</div>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<input type="button" id="submit" name="submit" value="submit">
+
+</form>
+<script>
+
+
+
+
+
+$( document ).ready(function() {
+
+
+$( "#submit" ).on( "click", function() {
+
+var ans1=$( "input[name=q1]:checked" ).val();
+
+var ans2=$( "input[name=q2]:checked" ).val();
+
+var ans3=$( "input[name=q3]:checked" ).val();
+
+var ans4=$( "input[name=q4]:checked" ).val();
+
+var ans5=$( "input[name=q5]:checked" ).val();
+
+var ans6=$( "input[name=q6]:checked" ).val();
+
+var ans7=$( "input[name=q7]:checked" ).val();
+
+var ans8=$( "input[name=q8]:checked" ).val();
+
+var ans9=$( "input[name=q9]:checked" ).val();
+
+var ans10=$( "input[name=q10]:checked" ).val();
+
+var answers = ["2","3","4","1","2","3","1","1","1","2"];
+
+
+if(ans1==answers[0]) {
+
+	/*$( "#log" ).html( ans1 + " is collect!" );*/
+	/*$('#log').addClass('right');*/
+	$( "#log" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans1!=answers[0])
+{
+   $( "#log" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans2==answers[1])
+{
+ /*$( "#log1" ).html( ans2 + " is collect!" );*/
+/* $('#log1').addClass('wrong');*/
+ $( "#log1" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans2!=answers[1])
+{
+  $( "#log1" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+if(ans3==answers[2])
+{
+ /*$( "#log2" ).html( ans3 + " is collect!" );*/
+/* $('#log2').addClass('wrong');*/
+ $( "#log2" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans3!=answers[2])
+{
+  $( "#log2" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans4==answers[3])
+{
+ /*$( "#log3" ).html( ans4 + " is collect!" );*/
+/* $('#log3').addClass('wrong');*/
+ $( "#log3" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans4!=answers[3])
+{
+  $( "#log3" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans5==answers[4])
+{
+ /*$( "#log4" ).html( ans5 + " is collect!" );*/
+/* $('#log4').addClass('wrong');*/
+ $( "#log4" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans5!=answers[4])
+{
+  $( "#log4" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans6==answers[5])
+{
+ /*$( "#log5" ).html( ans6 + " is collect!" );*/
+/* $('#log5').addClass('wrong');*/
+ $( "#log5" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans6!=answers[5])
+{
+  $( "#log5" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans7==answers[6])
+{
+ /*$( "#log6" ).html( ans7+ " is collect!" );*/
+/* $('#log6').addClass('wrong');*/
+ $( "#log6" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans7!=answers[6])
+{
+  $( "#log6" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans8==answers[7])
+{
+ /*$( "#log7" ).html( ans8+ " is collect!" );*/
+/* $('#log7').addClass('wrong');*/
+ $( "#log7" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans8!=answers[7])
+{
+  $( "#log7" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+if(ans9==answers[8])
+{
+ /*$( "#log7" ).html( ans8+ " is collect!" );*/
+/* $('#log7').addClass('wrong');*/
+ $( "#log8" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans9!=answers[8])
+{
+
+  $( "#log8" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans10==answers[9])
+{
+ /*$( "#log7" ).html( ans8+ " is collect!" );*/
+/* $('#log7').addClass('wrong');*/
+ $( "#log9" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans10!=answers[9])
+{
+
+  $( "#log9" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+
+});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

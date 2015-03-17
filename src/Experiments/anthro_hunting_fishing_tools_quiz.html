@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>checked demo</title>
+<style>
+input, label {
+line-height: 1.5em;
+}
+
+.right{
+ background-image:url(tick.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+ .wrong{
+ background-image:url(wrong.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+ 
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<form>
+<div>
+
+<label>1. Hunter Gatherer is the term used by anthropologists to describe</label><div id="log"></div>
+
+<p>
+<div>
+<input type="radio" name="q1" value="1" id="orange">
+<label for="orange">Group of people who hunt animal and gather food.</label>
+</div>
+<div>
+<input type="radio" name="q1" value="2" id="apple">
+<label for="apple">Specific kind of lifestyle of all human being until the invention of agriculture.</label>
+</div>
+<div>
+<input type="radio" name="q1" value="3" id="banana">
+<label for="banana">Specific group of animals.</label>
+</div>
+
+<input type="radio" name="q1" value="4" id="banana">
+<label for="banana">All human beings after the invention of agriculture.</label>
+</div>
+</p>
+<hr>
+
+
+
+
+<label>2. Dating of hunter-gatherers.....</label><div id="log1"></div>
+
+<p>
+<div>
+<input type="radio" name="q2" value="1" id="orange">
+<label for="orange">10,000 years ago.</label>
+</div>
+<div>
+<input type="radio" name="q2" value="2" id="apple">
+<label for="apple">8000 years ago</label>
+</div>
+<div>
+<input type="radio" name="q2" value="3" id="banana">
+<label for="banana">12,000 years ago</label>
+</div>
+
+<input type="radio" name="q2" value="4" id="banana">
+<label for="banana">9000 years ago</label>
+</div>
+
+</p>
+
+<hr>
+
+
+<label>3. Jakoi is a</label><div id="log2"></div>
+
+<p>
+<div>
+<input type="radio" name="q3" value="1" id="orange">
+<label for="orange">Fishing implement.</label>
+</div>
+<div>
+<input type="radio" name="q3" value="2" id="apple">
+<label for="apple">Fishing trap</label>
+</div>
+<div>
+<input type="radio" name="q3" value="3" id="banana">
+<label for="banana">None of these</label>
+</div>
+
+<input type="radio" name="q3" value="4" id="banana">
+<label for="banana">Both of these</label>
+</div>
+
+</p>
+
+<hr>
+
+
+<label>4. 'Jati' bamboo is spacially used for making the implement</label><div id="log3"></div>
+
+<p>
+<div>
+<input type="radio" name="q4" value="1" id="orange">
+<label for="orange">Chepa</label>
+</div>
+<div>
+<input type="radio" name="q4" value="2" id="apple">
+<label for="apple">Khoka</label>
+</div>
+<div>
+<input type="radio" name="q4" value="3" id="banana">
+<label for="banana">Polo</label>
+</div>
+
+<input type="radio" name="q4" value="4" id="banana">
+<label for="banana">Jakoi</label>
+</div>
+
+</p>
+
+<hr>
+
+
+<label>5. 	..... is specially used for catching big fishes.</label><div id="log4"></div>
+
+<p>
+<div>
+<input type="radio" name="q5" value="1" id="orange">
+<label for="orange">Polo</label>
+</div>
+<div>
+<input type="radio" name="q5" value="2" id="apple">
+<label for="apple">Chepa</label>
+</div>
+<div>
+<input type="radio" name="q5" value="3" id="banana">
+<label for="banana">Jakoi</label>
+</div>
+
+<input type="radio" name="q5" value="4" id="banana">
+<label for="banana">Khokafisa</label>
+</div>
+
+</p>
+
+
+<hr>
+
+
+<label>6. Mbutis live in</label><div id="log5"></div>
+
+<p>
+<div>
+<input type="radio" name="q6" value="1" id="orange">
+<label for="orange">Sudan</label>
+</div>
+<div>
+<input type="radio" name="q6" value="2" id="apple">
+<label for="apple">Ethiopia</label>
+</div>
+<div>
+<input type="radio" name="q6" value="3" id="banana">
+<label for="banana">Congo</label>
+</div>
+
+<input type="radio" name="q6" value="4" id="banana">
+<label for="banana">Malaysia</label>
+</div>
+
+</p>
+
+
+<hr>
+
+
+<label>7. Eskimo language is called.</label><div id="log6"></div>
+
+<p>
+<div>
+<input type="radio" name="q7" value="1" id="orange">
+<label for="orange">Semang</label>
+</div>
+<div>
+<input type="radio" name="q7" value="2" id="apple">
+<label for="apple">Inuit</label>
+</div>
+<div>
+<input type="radio" name="q7" value="3" id="banana">
+<label for="banana">Kokborok</label>
+</div>
+
+<input type="radio" name="q7" value="4" id="banana">
+<label for="banana">Siberian</label>
+</div>
+
+</p>
+
+<hr>
+
+
+
+<label>8. Semangs use the ……………….. for hunting</label><div id="log7"></div>
+
+<p>
+<div>
+<input type="radio" name="q8" value="1" id="orange">
+<label for="orange">Javelin</label>
+</div>
+<div>
+<input type="radio" name="q8" value="2" id="apple">
+<label for="apple">Spear</label>
+</div>
+<div>
+<input type="radio" name="q8" value="3" id="banana">
+<label for="banana">Blow gun</label>
+</div>
+
+<input type="radio" name="q8" value="4" id="banana">
+<label for="banana">Harpoon</label>
+</div>
+
+</p>
+
+
+
+<hr>
+
+
+
+
+
+<label>9. Most hunter-gatherers share a particular characteristic called………..</label><div id="log8"></div>
+
+<p>
+<div>
+<input type="radio" name="q9" value="1" id="orange">
+<label for="orange">Mobility</label>
+</div>
+<div>
+<input type="radio" name="q9" value="2" id="apple">
+<label for="apple">Sterility</label>
+</div>
+<div>
+<input type="radio" name="q9" value="3" id="banana">
+<label for="banana">Authenticity</label>
+</div>
+
+<input type="radio" name="q9" value="4" id="banana">
+<label for="banana">activity</label>
+</div>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="button" id="submit" name="submit" value="submit">
+
+</form>
+<script>
+
+
+
+
+
+$( document ).ready(function() {
+
+
+$( "#submit" ).on( "click", function() {
+
+var ans1=$( "input[name=q1]:checked" ).val();
+
+var ans2=$( "input[name=q2]:checked" ).val();
+
+var ans3=$( "input[name=q3]:checked" ).val();
+
+var ans4=$( "input[name=q4]:checked" ).val();
+
+var ans5=$( "input[name=q5]:checked" ).val();
+
+var ans6=$( "input[name=q6]:checked" ).val();
+
+var ans7=$( "input[name=q7]:checked" ).val();
+
+var ans8=$( "input[name=q8]:checked" ).val();
+
+var ans9=$( "input[name=q9]:checked" ).val();
+
+var answers = ["2","1","1","4","4","3","2","3","1"];
+
+
+if(ans1==answers[0]) {
+
+	/*$( "#log" ).html( ans1 + " is collect!" );*/
+	/*$('#log').addClass('right');*/
+	$( "#log" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans1!=answers[0])
+{
+   $( "#log" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans2==answers[1])
+{
+ /*$( "#log1" ).html( ans2 + " is collect!" );*/
+/* $('#log1').addClass('wrong');*/
+ $( "#log1" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans2!=answers[1])
+{
+  $( "#log1" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+if(ans3==answers[2])
+{
+ /*$( "#log2" ).html( ans3 + " is collect!" );*/
+/* $('#log2').addClass('wrong');*/
+ $( "#log2" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans3!=answers[2])
+{
+  $( "#log2" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans4==answers[3])
+{
+ /*$( "#log3" ).html( ans4 + " is collect!" );*/
+/* $('#log3').addClass('wrong');*/
+ $( "#log3" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans4!=answers[3])
+{
+  $( "#log3" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans5==answers[4])
+{
+ /*$( "#log4" ).html( ans5 + " is collect!" );*/
+/* $('#log4').addClass('wrong');*/
+ $( "#log4" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans5!=answers[4])
+{
+  $( "#log4" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans6==answers[5])
+{
+ /*$( "#log5" ).html( ans6 + " is collect!" );*/
+/* $('#log5').addClass('wrong');*/
+ $( "#log5" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans6!=answers[5])
+{
+  $( "#log5" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans7==answers[6])
+{
+ /*$( "#log6" ).html( ans7+ " is collect!" );*/
+/* $('#log6').addClass('wrong');*/
+ $( "#log6" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans7!=answers[6])
+{
+  $( "#log6" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+if(ans8==answers[7])
+{
+ /*$( "#log7" ).html( ans8+ " is collect!" );*/
+/* $('#log7').addClass('wrong');*/
+ $( "#log7" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans8!=answers[7])
+{
+  $( "#log7" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+if(ans9==answers[8])
+{
+ /*$( "#log7" ).html( ans8+ " is collect!" );*/
+/* $('#log7').addClass('wrong');*/
+ $( "#log8" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans9!=answers[8])
+{
+
+  $( "#log8" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+
+});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

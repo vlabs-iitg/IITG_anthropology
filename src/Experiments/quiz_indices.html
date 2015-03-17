@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>checked demo</title>
+<style>
+input, label {
+line-height: 1.5em;
+}
+
+.right{
+ background-image:url(tick.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+ .wrong{
+ background-image:url(wrong.gif.jpg);
+ background-repeat: no-repeat;
+
+ }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<form>
+<div>
+
+<label>	1)What is Craniometry?	</label><div id="log"></div>
+
+<p>
+<div>
+<input type="radio" name="q1" value="1" id="orange">
+<label for="orange">concerned with the technique of measurement on the cranium</label>
+</div>
+<div>
+<input type="radio" name="q1" value="2" id="apple">
+<label for="apple">Concerned with the technique of measurement on face of the skeleton.</label>
+</div>
+<div>
+<input type="radio" name="q1" value="3" id="banana">
+<label for="banana">Both a and b</label>
+</div>
+
+<input type="radio" name="q1" value="4" id="banana">
+<label for="banana">None of above</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+
+
+<label>2)How to calculate Cranial index?</label><div id="log1"></div>
+
+<p>
+<div>
+<input type="radio" name="q2" value="1" id="orange">
+<label for="orange">Min. Cranial Breadth x 100 / Max. Cranial Length</label>
+</div>
+<div>
+<input type="radio" name="q2" value="2" id="apple">
+<label for="apple">Bregma Height x 100 / Max. Carnial Length</label>
+</div>
+<div>
+<input type="radio" name="q2" value="3" id="banana">
+<label for="banana">Max. Cranial Breadth x 100 / Max. Cranial Length</label>
+</div>
+
+<input type="radio" name="q2" value="4" id="banana">
+<label for="banana">None of above</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+
+<label> 3) What is Basion-Bregma?</label><div id="log2"></div>
+
+<p>
+<div>
+<input type="radio" name="q3" value="1" id="orange">
+<label for="orange">The straight distance from the basion to bregma.</label>
+</div>
+<div>
+<input type="radio" name="q3" value="2" id="apple">
+<label for="apple">Bregma (b) is the meeting point of the sagittal and coronal sutures</label>
+</div>
+<div>
+<input type="radio" name="q3" value="3" id="banana">
+<label for="banana">Both a and b</label>
+</div>
+
+<input type="radio" name="q3" value="4" id="banana">
+<label for="banana">None of above</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+
+<label> 4) What is Bizygomatic breadth?</label><div id="log3"></div>
+<p>
+<div>
+<input type="radio" name="q4" value="1" id="orange">
+<label for="orange">The straight distance from one zygion to the other.</label>
+</div>
+<div>
+<input type="radio" name="q4" value="2" id="apple">
+<label for="apple">Zygion is the most lateral point of the zygomatic arch</label>
+</div>
+<div>
+<input type="radio" name="q4" value="3" id="banana">
+<label for="banana">The straight distance from the nasion to zygion</label>
+</div>
+<input type="radio" name="q4" value="4" id="banana">
+<label for="banana">Both a and b</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+<label>	5)	How to calculate Transverse Vertical Index?</label><div id="log4"></div>
+
+<p>
+<div>
+<input type="radio" name="q5" value="1" id="orange">
+<label for="orange">Basion -Bregma Height x 100 / Max. Cranial Breadth</label>
+</div>
+<div>
+<input type="radio" name="q5" value="2" id="apple">
+<label for="apple">Bregma Height x 100 / Max. Carnial Length</label>
+</div>
+<div>
+<input type="radio" name="q5" value="3" id="banana">
+<label for="banana">Upper Facial Height x 100 / Bizygomatic Breadth</label>
+</div>
+<input type="radio" name="q5" value="4" id="banana">
+<label for="banana">None of above</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>
+6)	Which instrument is used to measure Maximum Cranial Breadth?</label><div id="log5"></div>
+<p>
+<div>
+<input type="radio" name="q6" value="1" id="orange">
+<label for="orange">Spreading Caliper</label>
+</div>
+<div>
+<input type="radio" name="q6" value="2" id="apple">
+<label for="apple">Sliding Caliper</label>
+</div>
+<div>
+<input type="radio" name="q6" value="3" id="banana">
+<label for="banana">Vernier Caliper</label>
+</div>
+<input type="radio" name="q6" value="4" id="banana">
+<label for="banana">Pelvimeter</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+<label>7) What is Opisthocranion ?</label><div id="log6"></div>
+<p>
+<div>
+<input type="radio" name="q7" value="1" id="orange">
+<label for="orange">is the most posterior point from the glabella in the mid-sagittal plane</label>
+</div>
+<div>
+<input type="radio" name="q7" value="2" id="apple">
+<label for="apple">excluding the inion</label>
+</div>
+<div>
+<input type="radio" name="q7" value="3" id="banana">
+<label for="banana">is the most prominent point between the two superaorbital</label>
+</div>
+<input type="radio" name="q7" value="4" id="banana">
+<label for="banana">both a and b</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>	8)	What is NASION-INION PLANE ?</label><div id="log7"></div>
+<p>
+<div>
+<input type="radio" name="q8" value="1" id="orange">
+<label for="orange">when the nasion and inion are on the same vertical plane</label>
+</div>
+<div>
+<input type="radio" name="q8" value="2" id="apple">
+<label for="apple">when the nasion and inion are on the same horizontal plane</label>
+</div>
+<div>
+<input type="radio" name="q8" value="3" id="banana">
+<label for="banana">at a angular distance from inion</label>
+</div>
+<input type="radio" name="q8" value="4" id="banana">
+<label for="banana">on the right of nasion</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+<label>	9) What is a porion?</label><div id="log8"></div>
+<p>
+<div>
+<input type="radio" name="q9" value="1" id="orange">
+<label for="orange">distance between upper margin and lower margin of skull</label>
+</div>
+<div>
+<input type="radio" name="q9" value="2" id="apple">
+<label for="apple">internal auditory meatus</label>
+</div>
+<div>
+<input type="radio" name="q9" value="3" id="banana">
+<label for="banana">the deepest point on the upper margin of the external auditory meatus</label>
+</div>
+<input type="radio" name="q9" value="4" id="banana">
+<label for="banana">ridges above the fronto-nasal suture in the mid-sagittal plane</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<label>	
+10) What is Maximum Cranial Breadth?</label><div id="log9"></div>
+<p>
+<div>
+<input type="radio" name="q10" value="1" id="orange">
+<label for="orange">Straight distance between the two euryon points</label>
+</div>
+<div>
+<input type="radio" name="q10" value="2" id="apple">
+<label for="apple">Angular distance between the two euryon points.</label>
+</div>
+<div>
+<input type="radio" name="q10" value="3" id="orange">
+<label for="orange">The straight distance from the glabella</label>
+</div>
+<div>
+<input type="radio" name="q10" value="4" id="apple">
+<label for="apple">Distance between glabella and euryon</label>
+</div>
+</p>
+<br/>
+<br/>
+
+<input type="button" id="submit" name="submit" value="submit">
+
+</form>
+<script>
+
+
+
+
+$( "#submit" ).on( "click", function() {
+
+var ans1=$( "input[name=q1]:checked" ).val();
+
+var ans2=$( "input[name=q2]:checked" ).val();
+
+var ans3=$( "input[name=q3]:checked" ).val();
+
+var ans4=$( "input[name=q4]:checked" ).val();
+
+var ans5=$( "input[name=q5]:checked" ).val();
+
+var ans6=$( "input[name=q6]:checked" ).val();
+
+var ans7=$( "input[name=q7]:checked" ).val();
+
+var ans8=$( "input[name=q8]:checked" ).val();
+
+var ans9=$( "input[name=q9]:checked" ).val();
+
+var ans10=$( "input[name=q10]:checked" ).val();
+
+
+var answers = ["3","3","3","4","1","1","4","2","3","1"];
+
+
+
+if(ans1==answers[0]) {
+
+	$( "#log" ).html( ans1 + " is collect!" );
+	/*$('#log').addClass('right');*/
+	$( "#log" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans1!=answers[0])
+{
+   $( "#log" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans2==answers[1])
+{
+ $( "#log1" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log1" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans2!=answers[1])
+{
+  $( "#log1" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans3==answers[2])
+{
+ $( "#log2" ).html( ans3 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log2" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans3!=answers[2])
+{
+  $( "#log2" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans4==answers[3])
+{
+ $( "#log3" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log3" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans4!=answers[3])
+{
+  $( "#log3" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans5==answers[4])
+{
+ $( "#log4" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log4" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans5!=answers[4])
+{
+  $( "#log4" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans6==answers[5])
+{
+ $( "#log5" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log5" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans6!=answers[5])
+{
+  $( "#log5" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans7==answers[6])
+{
+ $( "#log6" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log6" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans7!=answers[6])
+{
+  $( "#log6" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans8==answers[7])
+{
+ $( "#log7" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log7" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans8!=answers[7])
+{
+  $( "#log7" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans9==answers[8])
+{
+ $( "#log8" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log8" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans9!=answers[8])
+{
+  $( "#log8" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+if(ans10==answers[9])
+{
+ $( "#log9" ).html( ans2 + " is collect!" );
+/* $('#log1').addClass('wrong');*/
+ $( "#log9" ).prepend('<img id="theImg" src="tick.gif.jpg" />');
+}
+else if(ans10!=answers[9])
+{
+  $( "#log9" ).prepend('<img id="theImg" src="wrong.gif.jpg" />');
+}
+
+
+});
+</script>
+</body>
+</html>
